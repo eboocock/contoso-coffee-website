@@ -152,41 +152,72 @@ button.cta{cursor:pointer}
       </div>
     </div>
   </div>
-  <script>
-    // Replace with your HTTP Request trigger URL from Power Automate
-    const FLOW_URL = "https://e8f70a479a6de7fa8e5f200b78db5b.16.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/e3568631792e4c5ebd373d303d45dc65/triggers/manual/paths/invoke/?api-version=1";
+<script>
+  // 1) If you followed Option A, put your logic.azure.com URL here.
+  // 2) If you built Option B, put your Azure Function URL here.
+  const FLOW_URL = "https://e8f70a479a6de7fa8e5f200b78db5b.16.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/e3568631792e4c5ebd373d303d45dc65/triggers/manual/paths/invoke/?api-version=1";
 
-    async function handleSubmit(){
-      const form = document.getElementById('contactForm');
-      const data = Object.fromEntries(new FormData(form).entries());
-      const payload = {
-        firstName: data.firstName,
-        lastName: data.lastName,
-        company: data.company,
-        email: data.email,
-        interest: data.interest,
-        message: data.message || "",
-        source: "Contoso Coffee Website",
-        submittedUtc: new Date().toISOString()
-      };
-      try{
-        if(!FLOW_URL || FLOW_URL.includes("REPLACE_WITH_YOUR_FLOW_TRIGGER_URL")) throw new Error("No Flow URL set");
-        const res = await fetch(FLOW_URL, { method:"POST", headers:{ "Content-Type": "application/json" }, body: JSON.stringify(payload) });
-        if(!res.ok) throw new Error("Flow returned " + res.status);
-        alert("Thanks! Your message was sent.");
-        form.reset();
-      }catch(e){
-        console.warn("Falling back to local download:", e);
-        const blob = new Blob([JSON.stringify(payload,null,2)], {type:'application/json'});
-        const url = URL.createObjectURL(blob);
-        const a = document.createElement('a');
-        a.href = url;
-        const ts = new Date().toISOString().slice(0,19).replace(/[:T]/g,'-');
-        a.download = 'contoso-contact-'+ts+'.json';
-        document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
-        alert("Saved your submission as a file. Set FLOW_URL to send to Power Automate.");
-      }
+  async function postJson(url, payload) {
+    return fetch(url, {
+      method: "POST",
+      mode: "cors",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify(payload)
+    });
+  }
+
+  async function postText(url, payload, mode = "cors") {
+    // text/plain reduces CORS friction in some browsers/gateways
+    return fetch(url, {
+      method: "POST",
+      mode,
+      headers: { "Content-Type": "text/plain;charset=UTF-8" },
+      body: JSON.stringify(payload)
+    });
+  }
+
+  async function handleSubmit() {
+    const form = document.getElementById('contactForm');
+    const data = Object.fromEntries(new FormData(form).entries());
+    const payload = {
+      firstName: data.firstName,
+      lastName: data.lastName,
+      company: data.company,
+      email: data.email,
+      interest: data.interest,
+      message: data.message || "",
+      source: "Contoso Coffee Website",
+      submittedUtc: new Date().toISOString()
+    };
+
+    // Attempt 1: JSON (best)
+    try {
+      const r1 = await postJson(FLOW_URL, payload);
+      if (r1.ok) { alert("Thanks! Your message was sent."); form.reset(); return; }
+      throw new Error("Status " + r1.status);
+    } catch (e1) {
+      console.warn("JSON post failed:", e1);
     }
-  </script>
+
+    // Attempt 2: text/plain (simple CORS)
+    try {
+      const r2 = await postText(FLOW_URL, payload, "cors");
+      if (r2.ok) { alert("Thanks! Your message was sent."); form.reset(); return; }
+      throw new Error("Status " + r2.status);
+    } catch (e2) {
+      console.warn("text/plain post failed:", e2);
+    }
+
+    // Attempt 3: no-cors (fire-and-forget)
+    try {
+      await postText(FLOW_URL, payload, "no-cors");
+      alert("Submitted. If it doesn't appear, check your Flow run history.");
+      form.reset();
+    } catch (e3) {
+      alert("We couldn't submit due to network restrictions. Please email sales@contoso.example.");
+      console.error(e3);
+    }
+  }
+</script>
 </body>
 </html>
