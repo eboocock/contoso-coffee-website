@@ -102,7 +102,19 @@ button.cta{cursor:pointer}
 
   <div class="form-card">
     <div class="pad">
-      <div class="badge" style="margin:4px 0 12px 0" role="button" tabindex="0" onclick="fillDemo()" onkeypress="if(event.key==='Enter'||event.key===' ') fillDemo();" style="cursor:pointer">Update lead form with demo data</div>
+     <div
+  class="badge"
+  role="button"
+  tabindex="0"
+  aria-label="Update lead form with demo data"
+  title="Click to prefill the form with demo data"
+  data-tip="Click to prefill the form"
+  onclick="fillDemo()"
+  onkeypress="if(event.key==='Enter'||event.key===' ') fillDemo();"
+>
+  Click to update lead form with demo data
+</div>
+
       <form id="contactForm" onsubmit="event.preventDefault(); handleSubmit();">
         <div class="form-grid">
           <div class="field">
