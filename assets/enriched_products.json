@@ -1,2127 +1,2127 @@
 [
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "Other",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "Other"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "Discover the timeless flavors of our Classic Roasts Coffee Pack, a curated selection of premium coffee blends that celebrate the rich heritage of coffee roasting. Perfect for coffee enthusiasts and casual drinkers alike, this pack offers a delightful journey through some of the most beloved coffee profiles.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COFFEE BEANS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COFFEE BEANS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "Experience the rich and smooth flavors of our Colombian Coffee Pack, featuring premium beans sourced from the lush, high-altitude regions of Colombia. Known for their balanced acidity and full-bodied taste, these beans are perfect for any coffee lover.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COFFEE BEANS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COFFEE BEANS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COFFEE BEANS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COFFEE BEANS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "Embark on a sensory journey with our Ethiopian Coffee Pack, featuring some of the finest coffee beans from the birthplace of coffee. Known for their vibrant and complex flavors, these beans offer a truly unique and unforgettable coffee experience.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COFFEE BEANS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COFFEE BEANS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
+    "SKU": "CC-CONTOS-4324",
     "Price": 4999.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL COFFEE GRINDERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL COFFEE GRINDERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
+    "SKU": "CC-CONTOS-4324",
     "Price": 3999.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL COFFEE GRINDERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL COFFEE GRINDERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL COFFEE GRINDERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL COFFEE GRINDERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL COFFEE GRINDERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL COFFEE GRINDERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
+    "SKU": "CC-CONTOS-4324",
     "Price": 1699.0,
     "Description": "Serving large-batch gourmet coffee just got a whole lot easier! With precision technology and easy-to-use features, this striking brewer takes the cake when it comes to providing impeccable coffee in fast-paced environments.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL COFFEE MAKERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL COFFEE MAKERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
+    "SKU": "CC-CONTOS-4324",
     "Price": 499.0,
     "Description": "The Airpot XL provides flexibility in high-volume, large sized venues such as Banquet Halls, Cafeterias and Restaurants. This machine helps simplify your daily operations, while giving you total control of your brew.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL COFFEE MAKERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL COFFEE MAKERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL COFFEE MAKERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL COFFEE MAKERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL COFFEE MAKERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL COFFEE MAKERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
+    "SKU": "CC-CONTOS-4324",
     "Price": 21900.0,
     "Description": "The Caf\u00e9 A-100 Automatic is the ideal machine for baristas looking for amazingly consistent coffee. This machine allows baristas to program desired volumes and consistently pull shots at that volume throughout the day. Because the barista no longer has to monitor each and every shot, they are given precious time to interact with customers or perhaps begin another order.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
+    "SKU": "CC-CONTOS-4324",
     "Price": 16900.0,
     "Description": "Featuring an eye-catching design and lower profile to invite customer engagement, the Caf\u00e9 Corto is a cutting-edge caf\u00e9 centerpiece that encourages engagement, barista experimentation and coffee conversations, while delivering the world\u2019s best coffee extraction.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
+    "SKU": "CC-CONTOS-4324",
     "Price": 12900.0,
     "Description": "Providing high quality espresso and coffee for large and small shops alike, the Caf\u00e9 Duo best accommodates smaller operations that serve a range of 50-80 drinks per day.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
+    "SKU": "CC-CONTOS-4324",
     "Price": 14900.0,
     "Description": "Keep brewing through the busiest crowds with the simple design and user-friendly features of the Caf\u00e9 Grande.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
+    "SKU": "CC-CONTOS-4324",
     "Price": 17900.0,
     "Description": "The Cafe S-100 Semiautomatic is in a league of its own when it comes to the functionality, style and available customizations. This well-designed commercial espresso machine produces high quality and consistent espresso. It's the perfect size for a small to mid-sized cafe with light to moderate traffic.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
+    "SKU": "CC-CONTOS-4324",
     "Price": 21900.0,
     "Description": "Barista Express \u2013 Professional Performance, Effortless Precision\nElevate your caf\u00e9 or restaurant with the Barista Express, the ultimate commercial espresso machine designed for speed, consistency, and exceptional coffee quality. Engineered by Contoso Coffee, a leader in high-end coffee equipment, the Barista Express delivers precision brewing and intuitive operation to meet the demands of busy coffee professionals.\n\nKey Features:\n\u2714 Dual Boiler System \u2013 Ensures simultaneous brewing and steaming for maximum efficiency and faster service.\n\u2714 PID Temperature Control \u2013 Maintains precise water temperature for consistent espresso extraction.\n\u2714 Pre-Infusion Technology \u2013 Gently expands coffee grounds before full-pressure extraction for a richer, more balanced flavor.\n\u2714 Commercial-Grade Steam Wand \u2013 Create silky, barista-quality microfoam for perfect lattes and cappuccinos.\n\u2714 Programmable Shot Volume & Manual Control \u2013 Customize every espresso to match your signature style.\n\u2714 Integrated Rotary Pump \u2013 Delivers steady, professional-grade water pressure for caf\u00e9-quality results.\n\u2714 Durable Stainless-Steel Construction \u2013 Built to withstand the demands of high-traffic environments.\n\nWhether you're a specialty coffee shop, restaurant, or high-volume caf\u00e9, the Barista Express combines cutting-edge technology with an intuitive workflow to help baristas craft exceptional coffee with ease.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER COFFEE GRINDERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER COFFEE GRINDERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER COFFEE GRINDERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER COFFEE GRINDERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER COFFEE GRINDERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER COFFEE GRINDERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER COFFEE GRINDERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER COFFEE GRINDERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER COFFEE MAKERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER COFFEE MAKERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER COFFEE MAKERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER COFFEE MAKERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER COFFEE MAKERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER COFFEE MAKERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER COFFEE MAKERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER COFFEE MAKERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER COFFEE MAKERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER COFFEE MAKERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER COFFEE MAKERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER COFFEE MAKERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER COFFEE MAKERS",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER COFFEE MAKERS"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "CONSUMER ESPRESSO",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "CONSUMER ESPRESSO"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "DRINKWARE",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "DRINKWARE"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "SERVICES",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "SERVICES"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "Unlock the full potential of your coffee with our specialized water filter, designed to enhance the quality and taste of your brew. Compatible with most coffee machines, this filter ensures every cup is brewed with the purest water possible.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "SERVICES",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "SERVICES"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "SERVICES",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "SERVICES"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "SERVICES",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "SERVICES"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
-    "Description": "Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.",
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
+    "Description": "Contoso Coffee Machine delivers consistent, barista-quality coffee with simple operation, durable components, and quick cleaning to keep service moving.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "SERVICES",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "SERVICES"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "Enjoy a monthly supply of 500 cups of premium coffee, featuring a delightful mix of classic and decaf roasts.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "Enjoy a monthly supply of 1000 cups of premium coffee, featuring an exquisite selection of classic and specialty roasts.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "Designed for true coffee aficionados and businesses, this subscription offers an unparalleled coffee experience with a generous supply of 2000 cups per month, including a diverse selection of roasts and all necessary supplies.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "1-year fair trade coffee beans subscription for commercial customers.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "2-year fair trade coffee beans subscriptions for commercial customers.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "1-year espresso blend subscriptions for commercial customers.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "2-year espresso blend subscription for commercial customers.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "1-year organic office coffee subscriptions for commercial customers.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "2-year organic office coffee subscriptions for commercial customers.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION"
   },
   {
     "Name": "Contoso Coffee Machine",
-    "SKU": "CC-CONTOS-9390",
-    "Price": 5639.0,
+    "SKU": "CC-CONTOS-4324",
+    "Price": 1251.0,
     "Description": "6-month fair trade coffee beans subscription for commercial customers.",
     "Features": [
-      "Integrated grinder with precision dosing",
       "Dual boilers for simultaneous brew and steam",
       "Large touchscreen with multilingual UI",
-      "IoT telemetry for proactive maintenance"
+      "Telemetry-ready for proactive maintenance",
+      "Recipe profiles for consistent quality"
     ],
-    "Image": "https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg",
-    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION",
     "Specs": {
-      "Dimensions (H\u00d7W\u00d7D)": "651\u00d7394\u00d7543 mm",
-      "Weight": "29.2 kg (64 lb)",
-      "Power": "2145 W",
+      "Dimensions (H\u00d7W\u00d7D)": "604\u00d7417\u00d7548 mm",
+      "Weight": "25 kg",
+      "Power": "2386 W",
       "Voltage": "120\u2013240 V",
       "Water Connection": "Plumbed-in or 3L tank",
-      "Hopper Capacity": "536 g",
-      "Boiler Capacity": "2.6 L",
-      "Recommended Output": "287 cups/day",
+      "Hopper Capacity": "498 g",
+      "Boiler Capacity": "1.5 L",
+      "Recommended Output": "318 cups/day",
       "Warranty": "2 years (parts & labor)"
-    }
+    },
+    "Image": "https://picsum.photos/seed/CC-CONTOS-4324/1200/675",
+    "Hierarchy Path": "COMMERCIAL SUBSCRIPTION"
   }
 ]
