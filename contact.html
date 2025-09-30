@@ -81,6 +81,47 @@ button.cta{cursor:pointer}
 @media (max-width:720px){.form-grid{grid-template-columns:1fr}}
 
 .form-toolbar{display:flex;justify-content:flex-end;margin-bottom:10px}
+
+    /* Clickable badge styling + tooltip */
+.badge[role="button"]{ cursor:pointer; }
+.badge[role="button"]:hover,
+.badge[role="button"]:focus-visible{
+  background: rgba(192,138,89,.22);
+  border-color: rgba(192,138,89,.55);
+  box-shadow: 0 0 0 2px rgba(192,138,89,.25) inset, 0 6px 18px rgba(0,0,0,.18);
+}
+
+/* Tooltip */
+.badge[data-tip]{ position:relative; outline: none; }
+.badge[data-tip]::after{
+  content: attr(data-tip);
+  position: absolute;
+  right: 0;
+  top: calc(100% + 8px);
+  white-space: nowrap;
+  background: #2b201c;
+  color: #f5efe9;
+  border: 1px solid rgba(255,255,255,.1);
+  border-radius: 8px;
+  padding: 6px 10px;
+  font-size: 12px;
+  opacity: 0;
+  transform: translateY(-4px);
+  pointer-events: none;
+  transition: opacity .15s ease, transform .15s ease;
+  z-index: 2;
+}
+.badge[data-tip]:hover::after,
+.badge[data-tip]:focus-visible::after{
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Motion-reduced users: no animated tooltip */
+@media (prefers-reduced-motion: reduce){
+  .badge[data-tip]::after{ transition: none; }
+}
+
 </style>
 </head>
 <body>
