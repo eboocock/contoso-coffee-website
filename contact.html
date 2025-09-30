@@ -191,8 +191,7 @@ button.cta{cursor:pointer}
       source: "Contoso Coffee Website",
       submittedUtc: new Date().toISOString()
     };
-    
-<script>
+
   function fillDemo() {
     const f = document.getElementById('contactForm');
     if (!f) return;
@@ -208,8 +207,8 @@ button.cta{cursor:pointer}
     const sendBtn = f.querySelector('button[type="submit"]');
     if (sendBtn) sendBtn.focus();
   }
-</script>
 
+  
     // Attempt 1: JSON (best)
     try {
       const r1 = await postJson(FLOW_URL, payload);
