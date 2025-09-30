@@ -7,58 +7,19 @@
   <meta name="description" content="Contoso Coffee — commercial and consumer coffee solutions"/>
   <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"/>
   <style>
-:root{
-  --bg:#0F0A08;
-  --surface:#1C1411;
-  --card:#241A16;
-  --text:#F4EDE8;
-  --muted:#CBBFBA;
-  --brand:#C08A59;
-  --accent:#7F5539;
-}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;color:var(--text);background:var(--bg);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
-a{color:var(--brand);text-decoration:none}
-a:hover{text-decoration:underline}
+/* Minimal fallback styling if index.html not found */
+body{font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:#0F0A08;color:#F4EDE8;margin:0}
 .container{max-width:1100px;margin:0 auto;padding:0 20px}
-.nav{position:sticky;top:0;z-index:20;background:rgba(15,10,8,.8);backdrop-filter:saturate(120%) blur(6px);border-bottom:1px solid rgba(255,255,255,.06)}
-.nav .row{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
-.brand{display:flex;gap:12px;align-items:center}
-.brand img{height:32px}
-.menu{display:flex;gap:18px;align-items:center}
-.menu a{padding:8px 10px;border-radius:10px}
-.menu a.active,.menu a:hover{background:rgba(255,255,255,.06)}
-.hero{position:relative}
-.hero img{width:100%;height:54vh;object-fit:cover;border-bottom:1px solid rgba(255,255,255,.08);}
-.hero .overlay{position:absolute;inset:0;display:grid;place-items:center;text-align:center;background:linear-gradient(transparent,rgba(15,10,8,.4),rgba(15,10,8,.9))}
-h1{font-size:44px;margin:0 0 10px}
-.lead{font-size:18px;color:var(--muted);max-width:900px;margin:0 auto}
-.grid{display:grid;gap:20px}
-.cards{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
-.card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.25)}
-.card .thumb{aspect-ratio:16/9;background:#000;display:block;width:100%}
-.card .pad{padding:16px}
-.badge{display:inline-block;padding:4px 10px;border-radius:999px;background:rgba(192,138,89,.15);color:#e9cfb8;border:1px solid rgba(192,138,89,.35);font-size:12px}
-.footer{margin-top:64px;border-top:1px solid rgba(255,255,255,.06);padding:30px 0;color:var(--muted);background:var(--surface)}
-.section{padding:36px 0}
-.section h2{font-size:28px;margin:0 0 10px}
-.kicker{color:var(--brand);text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin-bottom:6px}
-.product-group{margin:28px 0}
-.product-item{display:grid;grid-template-columns:160px 1fr;gap:16px;align-items:center;margin:12px 0;padding:14px;border:1px solid rgba(255,255,255,.06);border-radius:14px;background:rgba(255,255,255,.02)}
-.product-item img{width:160px;height:120px;object-fit:cover;border-radius:12px;background:#000}
-.table{width:100%;border-collapse:collapse;margin-top:10px}
-.table th,.table td{border-bottom:1px solid rgba(255,255,255,.08);padding:10px;text-align:left}
-.cta{display:inline-block;padding:12px 18px;border-radius:12px;background:var(--brand);color:#160E0B;font-weight:700;border:1px solid rgba(255,255,255,.12)}
-.cta:hover{filter:brightness(1.05)}
-form{display:grid;gap:12px;max-width:520px}
-input,select,textarea{background:#130D0A;color:var(--text);border:1px solid rgba(255,255,255,.08);padding:12px;border-radius:10px;font-size:15px}
-button{all:unset}
-button.cta{cursor:pointer}
-.notice{padding:12px 14px;border:1px dashed rgba(255,255,255,.2);border-radius:10px;background:rgba(255,255,255,.03);font-size:14px;color:var(--muted)}
-@media (max-width:720px){
-  .product-item{grid-template-columns:1fr}
-  .hero img{height:40vh}
-}
+.grid{display:grid;gap:20px}.cards{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.card{background:#241A16;border:1px solid rgba(255,255,255,.08);border-radius:16px;overflow:hidden}
+.card .thumb{aspect-ratio:16/9;object-fit:cover;width:100%}
+.pad{padding:16px}.badge{display:inline-block;padding:4px 10px;border-radius:999px;background:rgba(192,138,89,.15);border:1px solid rgba(192,138,89,.35)}
+.kicker{color:#C08A59;text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin:0 0 6px}
+.table{width:100%;border-collapse:collapse}.table th,.table td{border-bottom:1px solid rgba(255,255,255,.1);padding:8px;text-align:left}
+.cta{display:inline-block;padding:10px 14px;border-radius:12px;background:#C08A59;color:#160E0B;font-weight:700;text-decoration:none}
+.nav{background:#130D0A;border-bottom:1px solid rgba(255,255,255,.08)}.nav .row{display:flex;justify-content:space-between;align-items:center;padding:12px 0}
+.menu a{color:#F4EDE8;margin-left:12px}
+.footer{margin-top:40px;padding:20px 0;border-top:1px solid rgba(255,255,255,.08);color:#CBBFBA;background:#1C1411}
 </style>
 </head>
 <body>
@@ -66,7 +27,7 @@ button.cta{cursor:pointer}
 <div class="nav">
   <div class="container row">
     <a class="brand" href="index.html" aria-label="Contoso Coffee Home">
-      <img src="assets/img/logo.svg" alt="Contoso Coffee logo"/><strong>Contoso Coffee</strong>
+      <img src="assets/img/logo.svg" alt="Contoso Coffee logo" style="height:32px"/><strong> Contoso Coffee</strong>
     </a>
     <nav class="menu"><a href="index.html" class="">Home</a><a href="products.html" class="active">Products</a><a href="customers.html" class="">Customer Success</a><a href="contact.html" class="">Contact</a></nav>
   </div>
@@ -75,388 +36,510 @@ button.cta{cursor:pointer}
   
 <div class="container section">
   <div class="kicker">Our Products</div>
-  <h2>Purpose‑built for every coffee moment</h2>
-  <p class="lead">Explore our lineup grouped by category from your data’s <em>Hierarchy Path</em>.</p>
-  
-<div class="product-group">
-  <div class="kicker">Category</div>
-  <h2>Other</h2>
-  
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Parent Commercial Subscription.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Parent coffee beans.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
+  <h2>Purpose-built for every coffee moment</h2>
+  <p class="lead">All products are normalized to show complete, comparable information.</p>
 </div>
 
 <div class="product-group">
-  <div class="kicker">Category</div>
-  <h2>COFFEE BEANS</h2>
-  
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Discover the timeless flavors of our Classic Roasts Coffee Pack, a curated selection of premium coffee blends that celebrate the rich heritage of coffee roasting. Perfect for coffee enthusiasts and casual drinkers alike, this pack offers a delightful journey through some of the most beloved coffee profiles.</p>
-    <div class="muted"></div>
+  <div class="container section">
+    <div class="kicker">Category</div>
+    <h2>COFFEE BEANS</h2>
+    <div class="grid cards">
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Discover the timeless flavors of our Classic Roasts Coffee Pack, a curated selection of premium coffee blends that celebrate the rich heritage of coffee roasting. Perfect for coffee enthusiasts and casual drinkers alike, this pack offers a delightful journey through some of the most beloved coffee profiles.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Experience the rich and smooth flavors of our Colombian Coffee Pack, featuring premium beans sourced from the lush, high-altitude regions of Colombia. Known for their balanced acidity and full-bodied taste, these beans are perfect for any coffee lover.</p>
-    <div class="muted"></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Experience the rich and smooth flavors of our Colombian Coffee Pack, featuring premium beans sourced from the lush, high-altitude regions of Colombia. Known for their balanced acidity and full-bodied taste, these beans are perfect for any coffee lover.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Embark on a sensory journey with our Ethiopian Coffee Pack, featuring some of the finest coffee beans from the birthplace of coffee. Known for their vibrant and complex flavors, these beans offer a truly unique and unforgettable coffee experience.</p>
-    <div class="muted"></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Embark on a sensory journey with our Ethiopian Coffee Pack, featuring some of the finest coffee beans from the birthplace of coffee. Known for their vibrant and complex flavors, these beans offer a truly unique and unforgettable coffee experience.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
-
+</div>
+  </div>
 </div>
 
 <div class="product-group">
-  <div class="kicker">Category</div>
-  <h2>COMMERCIAL COFFEE GRINDERS</h2>
-  
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"><div><strong>List Price:</strong> 4999.00</div></div>
+  <div class="container section">
+    <div class="kicker">Category</div>
+    <h2>COMMERCIAL COFFEE GRINDERS</h2>
+    <div class="grid cards">
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $4,999.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"><div><strong>List Price:</strong> 3999.00</div></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $3,999.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
-
+</div>
+  </div>
 </div>
 
 <div class="product-group">
-  <div class="kicker">Category</div>
-  <h2>COMMERCIAL COFFEE MAKERS</h2>
-  
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Serving large-batch gourmet coffee just got a whole lot easier! With precision technology and easy-to-use features, this striking brewer takes the cake when it comes to providing impeccable coffee in fast-paced environments.</p>
-    <div class="muted"><div><strong>List Price:</strong> 1699.00</div></div>
+  <div class="container section">
+    <div class="kicker">Category</div>
+    <h2>COMMERCIAL COFFEE MAKERS</h2>
+    <div class="grid cards">
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Serving large-batch gourmet coffee just got a whole lot easier! With precision technology and easy-to-use features, this striking brewer takes the cake when it comes to providing impeccable coffee in fast-paced environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $1,699.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">The Airpot XL provides flexibility in high-volume, large sized venues such as Banquet Halls, Cafeterias and Restaurants. This machine helps simplify your daily operations, while giving you total control of your brew.</p>
-    <div class="muted"><div><strong>List Price:</strong> 499.00</div></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">The Airpot XL provides flexibility in high-volume, large sized venues such as Banquet Halls, Cafeterias and Restaurants. This machine helps simplify your daily operations, while giving you total control of your brew.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $499.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
-
+</div>
+  </div>
 </div>
 
 <div class="product-group">
-  <div class="kicker">Category</div>
-  <h2>COMMERCIAL ESPRESSO</h2>
-  
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
+  <div class="container section">
+    <div class="kicker">Category</div>
+    <h2>COMMERCIAL ESPRESSO</h2>
+    <div class="grid cards">
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">The Café A-100 Automatic is the ideal machine for baristas looking for amazingly consistent coffee. This machine allows baristas to program desired volumes and consistently pull shots at that volume throughout the day. Because the barista no longer has to monitor each and every shot, they are given precious time to interact with customers or perhaps begin another order.</p>
-    <div class="muted"><div><strong>List Price:</strong> 21900.00</div></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">The Café A-100 Automatic is the ideal machine for baristas looking for amazingly consistent coffee. This machine allows baristas to program desired volumes and consistently pull shots at that volume throughout the day. Because the barista no longer has to monitor each and every shot, they are given precious time to interact with customers or perhaps begin another order.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $21,900.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Featuring an eye-catching design and lower profile to invite customer engagement, the Café Corto is a cutting-edge café centerpiece that encourages engagement, barista experimentation and coffee conversations, while delivering the world’s best coffee extraction.</p>
-    <div class="muted"><div><strong>List Price:</strong> 16900.00</div></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Featuring an eye-catching design and lower profile to invite customer engagement, the Café Corto is a cutting-edge café centerpiece that encourages engagement, barista experimentation and coffee conversations, while delivering the world’s best coffee extraction.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $16,900.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Providing high quality espresso and coffee for large and small shops alike, the Café Duo best accommodates smaller operations that serve a range of 50-80 drinks per day.</p>
-    <div class="muted"><div><strong>List Price:</strong> 12900.00</div></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Providing high quality espresso and coffee for large and small shops alike, the Café Duo best accommodates smaller operations that serve a range of 50-80 drinks per day.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $12,900.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Keep brewing through the busiest crowds with the simple design and user-friendly features of the Café Grande.</p>
-    <div class="muted"><div><strong>List Price:</strong> 14900.00</div></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Keep brewing through the busiest crowds with the simple design and user-friendly features of the Café Grande.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $14,900.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">The Cafe S-100 Semiautomatic is in a league of its own when it comes to the functionality, style and available customizations. This well-designed commercial espresso machine produces high quality and consistent espresso. It's the perfect size for a small to mid-sized cafe with light to moderate traffic.</p>
-    <div class="muted"><div><strong>List Price:</strong> 17900.00</div></div>
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">The Cafe S-100 Semiautomatic is in a league of its own when it comes to the functionality, style and available customizations. This well-designed commercial espresso machine produces high quality and consistent espresso. It's the perfect size for a small to mid-sized cafe with light to moderate traffic.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $17,900.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
   </div>
 </div>
 
 
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Barista Express – Professional Performance, Effortless Precision
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Barista Express – Professional Performance, Effortless Precision
 Elevate your café or restaurant with the Barista Express, the ultimate commercial espresso machine designed for speed, consistency, and exceptional coffee quality. Engineered by Contoso Coffee, a leader in high-end coffee equipment, the Barista Express delivers precision brewing and intuitive operation to meet the demands of busy coffee professionals.
 
 Key Features:
@@ -469,546 +552,1801 @@ Key Features:
 ✔ Durable Stainless-Steel Construction – Built to withstand the demands of high-traffic environments.
 
 Whether you're a specialty coffee shop, restaurant, or high-volume café, the Barista Express combines cutting-edge technology with an intuitive workflow to help baristas craft exceptional coffee with ease.</p>
-    <div class="muted"><div><strong>List Price:</strong> 21900.00</div></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-</div>
-
-<div class="product-group">
-  <div class="kicker">Category</div>
-  <h2>CONSUMER COFFEE GRINDERS</h2>
-  
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-</div>
-
-<div class="product-group">
-  <div class="kicker">Category</div>
-  <h2>CONSUMER COFFEE MAKERS</h2>
-  
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-</div>
-
-<div class="product-group">
-  <div class="kicker">Category</div>
-  <h2>CONSUMER ESPRESSO</h2>
-  
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-</div>
-
-<div class="product-group">
-  <div class="kicker">Category</div>
-  <h2>DRINKWARE</h2>
-  
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-</div>
-
-<div class="product-group">
-  <div class="kicker">Category</div>
-  <h2>SERVICES</h2>
-  
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Unlock the full potential of your coffee with our specialized water filter, designed to enhance the quality and taste of your brew. Compatible with most coffee machines, this filter ensures every cup is brewed with the purest water possible.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Reliable, consistent coffee at the push of a button.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-</div>
-
-<div class="product-group">
-  <div class="kicker">Category</div>
-  <h2>SUBSCRIPTION-CM</h2>
-  
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Enjoy a monthly supply of 500 cups of premium coffee, featuring a delightful mix of classic and decaf roasts.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Enjoy a monthly supply of 1000 cups of premium coffee, featuring an exquisite selection of classic and specialty roasts.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">Designed for true coffee aficionados and businesses, this subscription offers an unparalleled coffee experience with a generous supply of 2000 cups per month, including a diverse selection of roasts and all necessary supplies.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">1-year fair trade coffee beans subscription for commercial customers.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">2-year fair trade coffee beans subscriptions for commercial customers.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">1-year espresso blend subscriptions for commercial customers.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">2-year espresso blend subscription for commercial customers.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">1-year organic office coffee subscriptions for commercial customers.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">2-year organic office coffee subscriptions for commercial customers.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-
-<div class="product-item">
-  <img src="https://images.pexels.com/photos/28272182/pexels-photo-28272182.jpeg?cs=srgb&fm=jpg&w=1600" alt="Coffee Machine"/>
-  <div>
-    <h3 style="margin:0">Coffee Machine</h3>
-    <p style="margin:6px 0 8px">6-month fair trade coffee beans subscription for commercial customers.</p>
-    <div class="muted"></div>
-  </div>
-</div>
-
-</div>
-
-</div>
-
-  
-<div class="footer">
-  <div class="container">
-    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
-      <div>© 2025 Contoso Coffee. All rights reserved.</div>
-      <div>Ethically sourced • Carbon neutral roasting • Global service network</div>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $21,900.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
     </div>
   </div>
 </div>
 
-  <script>
-    console.log("Contoso Coffee site loaded");
-  </script>
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+<div class="product-group">
+  <div class="container section">
+    <div class="kicker">Category</div>
+    <h2>COMMERCIAL SUBSCRIPTION</h2>
+    <div class="grid cards">
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Enjoy a monthly supply of 500 cups of premium coffee, featuring a delightful mix of classic and decaf roasts.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Enjoy a monthly supply of 1000 cups of premium coffee, featuring an exquisite selection of classic and specialty roasts.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Designed for true coffee aficionados and businesses, this subscription offers an unparalleled coffee experience with a generous supply of 2000 cups per month, including a diverse selection of roasts and all necessary supplies.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">1-year fair trade coffee beans subscription for commercial customers.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">2-year fair trade coffee beans subscriptions for commercial customers.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">1-year espresso blend subscriptions for commercial customers.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">2-year espresso blend subscription for commercial customers.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">1-year organic office coffee subscriptions for commercial customers.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">2-year organic office coffee subscriptions for commercial customers.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">6-month fair trade coffee beans subscription for commercial customers.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+<div class="product-group">
+  <div class="container section">
+    <div class="kicker">Category</div>
+    <h2>CONSUMER COFFEE GRINDERS</h2>
+    <div class="grid cards">
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+<div class="product-group">
+  <div class="container section">
+    <div class="kicker">Category</div>
+    <h2>CONSUMER COFFEE MAKERS</h2>
+    <div class="grid cards">
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+<div class="product-group">
+  <div class="container section">
+    <div class="kicker">Category</div>
+    <h2>CONSUMER ESPRESSO</h2>
+    <div class="grid cards">
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+<div class="product-group">
+  <div class="container section">
+    <div class="kicker">Category</div>
+    <h2>DRINKWARE</h2>
+    <div class="grid cards">
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+<div class="product-group">
+  <div class="container section">
+    <div class="kicker">Category</div>
+    <h2>Other</h2>
+    <div class="grid cards">
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+<div class="product-group">
+  <div class="container section">
+    <div class="kicker">Category</div>
+    <h2>SERVICES</h2>
+    <div class="grid cards">
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Unlock the full potential of your coffee with our specialized water filter, designed to enhance the quality and taste of your brew. Compatible with most coffee machines, this filter ensures every cup is brewed with the purest water possible.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+
+
+<div class="card" style="overflow:hidden">
+  <img class="thumb" src="https://cdn.pixabay.com/photo/2017/01/05/13/52/coffee-1958233_1280.jpg" alt="Contoso Coffee Machine" />
+  <div class="pad">
+    <div class="badge">SKU CC-CONTOS-9390</div>
+    <h3 style="margin:6px 0 8px">Contoso Coffee Machine</h3>
+    <p style="margin:0 0 10px">Contoso Coffee Machine delivers barista-quality coffee with automated workflows, intuitive controls, and durable components designed for high-demand environments.</p>
+    <div style="display:flex;gap:20px;flex-wrap:wrap">
+      <div style="flex:1;min-width:240px">
+        <strong>Key features</strong>
+        <ul style="margin:8px 0 0 18px">
+          <li>Integrated grinder with precision dosing</li><li>Dual boilers for simultaneous brew and steam</li><li>Large touchscreen with multilingual UI</li><li>IoT telemetry for proactive maintenance</li>
+        </ul>
+      </div>
+      <div style="flex:1;min-width:260px">
+        <strong>Specifications</strong>
+        <table class="table"><tr><th>Dimensions (H×W×D)</th><td>651×394×543 mm</td></tr><tr><th>Weight</th><td>29.2 kg (64 lb)</td></tr><tr><th>Power</th><td>2145 W</td></tr><tr><th>Voltage</th><td>120–240 V</td></tr><tr><th>Water Connection</th><td>Plumbed-in or 3L tank</td></tr><tr><th>Hopper Capacity</th><td>536 g</td></tr><tr><th>Boiler Capacity</th><td>2.6 L</td></tr><tr><th>Recommended Output</th><td>287 cups/day</td></tr><tr><th>Warranty</th><td>2 years (parts & labor)</td></tr></table>
+      </div>
+    </div>
+    <div style="margin-top:10px;display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap">
+      <div><strong>List Price:</strong> $5,639.00</div>
+      <a class="cta" href="contact.html?product=CC-CONTOS-9390">Request pricing & demo</a>
+    </div>
+  </div>
+</div>
+</div>
+  </div>
+</div>
+
+
+  <div class="footer">
+    <div class="container">
+      <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+        <div>© 2025 Contoso Coffee. All rights reserved.</div>
+        <div>Ethically sourced • Carbon neutral roasting • Global service network</div>
+      </div>
+    </div>
+  </div>
 </body>
 </html>
