@@ -153,9 +153,9 @@ button.cta{cursor:pointer}
     </div>
   </div>
 <script>
-  // 1) If you followed Option A, put your logic.azure.com URL here.
+  // 1) If you followed Option A, put your logic.azure.com URL here. https://e8f70a479a6de7fa8e5f200b78db5b.16.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/e3568631792e4c5ebd373d303d45dc65/triggers/manual/paths/invoke/?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=y-cVgYn5r_SDJ6tTA2NXKnj2edMF0JXWNlrYfNPCtM4
   // 2) If you built Option B, put your Azure Function URL here.
-  const FLOW_URL = "https://e8f70a479a6de7fa8e5f200b78db5b.16.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/e3568631792e4c5ebd373d303d45dc65/triggers/manual/paths/invoke/?api-version=1";
+  const FLOW_URL = "https://e8f70a479a6de7fa8e5f200b78db5b.16.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/e3568631792e4c5ebd373d303d45dc65/triggers/manual/paths/invoke/?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=y-cVgYn5r_SDJ6tTA2NXKnj2edMF0JXWNlrYfNPCtM4";
 
   async function postJson(url, payload) {
     return fetch(url, {
