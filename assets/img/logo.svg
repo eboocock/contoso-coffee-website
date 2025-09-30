@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="160" height="40" viewBox="0 0 160 40" aria-label="Contoso Coffee">
+  <rect width="160" height="40" rx="8" fill="#2A1A16"/>
+  <g fill="#F4EDE8" font-family="Inter,Segoe UI,Roboto,Arial" font-weight="700">
+    <text x="14" y="26" font-size="18">Contoso</text>
+    <text x="100" y="26" font-size="18" fill="#C08A59">Coffee</text>
+  </g>
+  <circle cx="146" cy="20" r="6" fill="#C08A59"/>
+  <path d="M145 15c2 2 2 6 0 8" stroke="#2A1A16" stroke-width="2" fill="none" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,231 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>Customer Success • Contoso Coffee</title>
+  <meta name="description" content="Contoso Coffee — commercial and consumer coffee solutions"/>
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"/>
+  <style>
+:root{
+  --bg:#0F0A08;
+  --surface:#1C1411;
+  --card:#241A16;
+  --text:#F4EDE8;
+  --muted:#CBBFBA;
+  --brand:#C08A59;
+  --accent:#7F5539;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;color:var(--text);background:var(--bg);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
+a{color:var(--brand);text-decoration:none}
+a:hover{text-decoration:underline}
+.container{max-width:1100px;margin:0 auto;padding:0 20px}
+.nav{position:sticky;top:0;z-index:20;background:rgba(15,10,8,.8);backdrop-filter:saturate(120%) blur(6px);border-bottom:1px solid rgba(255,255,255,.06)}
+.nav .row{display:flex;align-items:center;justify-content:space-between;padding:12px 0}
+.brand{display:flex;gap:12px;align-items:center}
+.brand img{height:32px}
+.menu{display:flex;gap:18px;align-items:center}
+.menu a{padding:8px 10px;border-radius:10px}
+.menu a.active,.menu a:hover{background:rgba(255,255,255,.06)}
+.hero{position:relative}
+.hero img{width:100%;height:54vh;object-fit:cover;border-bottom:1px solid rgba(255,255,255,.08);}
+.hero .overlay{position:absolute;inset:0;display:grid;place-items:center;text-align:center;background:linear-gradient(transparent,rgba(15,10,8,.4),rgba(15,10,8,.9))}
+h1{font-size:44px;margin:0 0 10px}
+.lead{font-size:18px;color:var(--muted);max-width:900px;margin:0 auto}
+.grid{display:grid;gap:20px}
+.cards{grid-template-columns:repeat(auto-fit,minmax(240px,1fr))}
+.card{background:var(--card);border:1px solid rgba(255,255,255,.06);border-radius:16px;overflow:hidden;box-shadow:0 8px 30px rgba(0,0,0,.25)}
+.card .thumb{aspect-ratio:16/9;background:#000;display:block;width:100%}
+.card .pad{padding:16px}
+.badge{display:inline-block;padding:4px 10px;border-radius:999px;background:rgba(192,138,89,.15);color:#e9cfb8;border:1px solid rgba(192,138,89,.35);font-size:12px}
+.footer{margin-top:64px;border-top:1px solid rgba(255,255,255,.06);padding:30px 0;color:var(--muted);background:var(--surface)}
+.section{padding:36px 0}
+.section h2{font-size:28px;margin:0 0 10px}
+.kicker{color:var(--brand);text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin-bottom:6px}
+.product-group{margin:28px 0}
+.product-item{display:grid;grid-template-columns:160px 1fr;gap:16px;align-items:center;margin:12px 0;padding:14px;border:1px solid rgba(255,255,255,.06);border-radius:14px;background:rgba(255,255,255,.02)}
+.product-item img{width:160px;height:120px;object-fit:cover;border-radius:12px;background:#000}
+.table{width:100%;border-collapse:collapse;margin-top:10px}
+.table th,.table td{border-bottom:1px solid rgba(255,255,255,.08);padding:10px;text-align:left}
+.cta{display:inline-block;padding:12px 18px;border-radius:12px;background:var(--brand);color:#160E0B;font-weight:700;border:1px solid rgba(255,255,255,.12)}
+.cta:hover{filter:brightness(1.05)}
+form{display:grid;gap:12px;max-width:520px}
+input,select,textarea{background:#130D0A;color:var(--text);border:1px solid rgba(255,255,255,.08);padding:12px;border-radius:10px;font-size:15px}
+button{all:unset}
+button.cta{cursor:pointer}
+.notice{padding:12px 14px;border:1px dashed rgba(255,255,255,.2);border-radius:10px;background:rgba(255,255,255,.03);font-size:14px;color:var(--muted)}
+@media (max-width:720px){
+  .product-item{grid-template-columns:1fr}
+  .hero img{height:40vh}
+}
+</style>
+</head>
+<body>
+  
+<div class="nav">
+  <div class="container row">
+    <a class="brand" href="index.html" aria-label="Contoso Coffee Home">
+      <img src="assets/img/logo.svg" alt="Contoso Coffee logo"/><strong>Contoso Coffee</strong>
+    </a>
+    <nav class="menu"><a href="index.html" class="">Home</a><a href="products.html" class="">Products</a><a href="customers.html" class="active">Customer Success</a><a href="contact.html" class="">Contact</a></nav>
+  </div>
+</div>
+
+  
+<div class="container section">
+  <div class="kicker">Proven outcomes</div>
+  <h2>From cafés to campuses, results you can measure</h2>
+  <div class="grid cards">
+    
+<div class="card">
+  <img class="thumb" src="https://images.pexels.com/photos/6931054/pexels-photo-6931054.jpeg?cs=srgb&fm=jpg&w=1400" alt="Adatum Corporation success story"/>
+  <div class="pad">
+    <div class="badge">Case Study</div>
+    <h3>Adatum Corporation: Brewing Better at Scale</h3>
+    <p>After standardizing on the <strong>Adatum Corporation | Café A-200 Automatic</strong>, Adatum Corporation reduced drink variation and sped up lines during peak hours. With Contoso’s proactive maintenance plan, they cut downtime and boosted sales.</p>
+    <table class="table">
+      <tr><th>Time to value</th><td>Under 60 days</td></tr>
+      <tr><th>Annual impact</th><td>$2,332,155 in incremental revenue & savings</td></tr>
+      <tr><th>Why Contoso</th><td>Reliability, training & service coverage</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <img class="thumb" src="https://images.pexels.com/photos/6931054/pexels-photo-6931054.jpeg?cs=srgb&fm=jpg&w=1400" alt="Adventure Works Cycles success story"/>
+  <div class="pad">
+    <div class="badge">Case Study</div>
+    <h3>Adventure Works Cycles: Brewing Better at Scale</h3>
+    <p>After standardizing on the <strong>Adventure Works Cycles | Café A-200 Automatic</strong>, Adventure Works Cycles reduced drink variation and sped up lines during peak hours. With Contoso’s proactive maintenance plan, they cut downtime and boosted sales.</p>
+    <table class="table">
+      <tr><th>Time to value</th><td>Under 60 days</td></tr>
+      <tr><th>Annual impact</th><td>$3,218,088 in incremental revenue & savings</td></tr>
+      <tr><th>Why Contoso</th><td>Reliability, training & service coverage</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <img class="thumb" src="https://images.pexels.com/photos/6931054/pexels-photo-6931054.jpeg?cs=srgb&fm=jpg&w=1400" alt="Alpine Ski House success story"/>
+  <div class="pad">
+    <div class="badge">Case Study</div>
+    <h3>Alpine Ski House: Brewing Better at Scale</h3>
+    <p>After standardizing on the <strong>Alpine Ski House | AutoDrip</strong>, Alpine Ski House reduced drink variation and sped up lines during peak hours. With Contoso’s proactive maintenance plan, they cut downtime and boosted sales.</p>
+    <table class="table">
+      <tr><th>Time to value</th><td>Under 60 days</td></tr>
+      <tr><th>Annual impact</th><td>$1,734,468 in incremental revenue & savings</td></tr>
+      <tr><th>Why Contoso</th><td>Reliability, training & service coverage</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <img class="thumb" src="https://images.pexels.com/photos/6931054/pexels-photo-6931054.jpeg?cs=srgb&fm=jpg&w=1400" alt="Bellows College success story"/>
+  <div class="pad">
+    <div class="badge">Case Study</div>
+    <h3>Bellows College: Brewing Better at Scale</h3>
+    <p>After standardizing on the <strong>Bellows College | Stainless Steel Tamper</strong>, Bellows College reduced drink variation and sped up lines during peak hours. With Contoso’s proactive maintenance plan, they cut downtime and boosted sales.</p>
+    <table class="table">
+      <tr><th>Time to value</th><td>Under 60 days</td></tr>
+      <tr><th>Annual impact</th><td>$2,290,803 in incremental revenue & savings</td></tr>
+      <tr><th>Why Contoso</th><td>Reliability, training & service coverage</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <img class="thumb" src="https://images.pexels.com/photos/6931054/pexels-photo-6931054.jpeg?cs=srgb&fm=jpg&w=1400" alt="Best For You Organics Company success story"/>
+  <div class="pad">
+    <div class="badge">Case Study</div>
+    <h3>Best For You Organics Company: Brewing Better at Scale</h3>
+    <p>After standardizing on the <strong>Best For You Organics Company | Café A-100 Automatic</strong>, Best For You Organics Company reduced drink variation and sped up lines during peak hours. With Contoso’s proactive maintenance plan, they cut downtime and boosted sales.</p>
+    <table class="table">
+      <tr><th>Time to value</th><td>Under 60 days</td></tr>
+      <tr><th>Annual impact</th><td>$3,099,249 in incremental revenue & savings</td></tr>
+      <tr><th>Why Contoso</th><td>Reliability, training & service coverage</td></tr>
+    </table>
+  </div>
+</div>
+
+<div class="card">
+  <img class="thumb" src="https://images.pexels.com/photos/6931054/pexels-photo-6931054.jpeg?cs=srgb&fm=jpg&w=1400" alt="Consolidated Messenger success story"/>
+  <div class="pad">
+    <div class="badge">Case Study</div>
+    <h3>Consolidated Messenger: Brewing Better at Scale</h3>
+    <p>After standardizing on the <strong>Consolidated Messenger | Café BG-1 Pro</strong>, Consolidated Messenger reduced drink variation and sped up lines during peak hours. With Contoso’s proactive maintenance plan, they cut downtime and boosted sales.</p>
+    <table class="table">
+      <tr><th>Time to value</th><td>Under 60 days</td></tr>
+      <tr><th>Annual impact</th><td>$1,384,699 in incremental revenue & savings</td></tr>
+      <tr><th>Why Contoso</th><td>Reliability, training & service coverage</td></tr>
+    </table>
+  </div>
+</div>
+
+  </div>
+</div>
+<div class="container section">
+  <div class="kicker">What customers say</div>
+  <h2>Testimonials</h2>
+  <div class="grid" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:16px">
+    
+  <blockquote class="card" style="padding:0">
+    <div class="pad">
+      <p style="font-size:18px;margin:0 0 8px">“Contoso transformed our coffee program. Drinks taste consistent, training is simple, and service is fast—our customers noticed immediately.”</p>
+      <div class="muted">— Abbie Gardiner, Procurement Manager, Adatum Corporation</div>
+    </div>
+  </blockquote>
+
+  <blockquote class="card" style="padding:0">
+    <div class="pad">
+      <p style="font-size:18px;margin:0 0 8px">“Contoso transformed our coffee program. Drinks taste consistent, training is simple, and service is fast—our customers noticed immediately.”</p>
+      <div class="muted">— Aidan Knaggs, Procurement Manager, Adventure Works Cycles</div>
+    </div>
+  </blockquote>
+
+  <blockquote class="card" style="padding:0">
+    <div class="pad">
+      <p style="font-size:18px;margin:0 0 8px">“Contoso transformed our coffee program. Drinks taste consistent, training is simple, and service is fast—our customers noticed immediately.”</p>
+      <div class="muted">— Alfonso Albritton, Operations Manager, Alpine Ski House</div>
+    </div>
+  </blockquote>
+
+  <blockquote class="card" style="padding:0">
+    <div class="pad">
+      <p style="font-size:18px;margin:0 0 8px">“Contoso transformed our coffee program. Drinks taste consistent, training is simple, and service is fast—our customers noticed immediately.”</p>
+      <div class="muted">— Alva Tharaldsen, Finance Manager, Bellows College</div>
+    </div>
+  </blockquote>
+
+  <blockquote class="card" style="padding:0">
+    <div class="pad">
+      <p style="font-size:18px;margin:0 0 8px">“Contoso transformed our coffee program. Drinks taste consistent, training is simple, and service is fast—our customers noticed immediately.”</p>
+      <div class="muted">— Amanda Hegg, Sales Manager, Best For You Organics Company</div>
+    </div>
+  </blockquote>
+
+  <blockquote class="card" style="padding:0">
+    <div class="pad">
+      <p style="font-size:18px;margin:0 0 8px">“Contoso transformed our coffee program. Drinks taste consistent, training is simple, and service is fast—our customers noticed immediately.”</p>
+      <div class="muted">— Angela Nicholson, Cafeteria Manager, Consolidated Messenger</div>
+    </div>
+  </blockquote>
+
+  </div>
+</div>
+
+  
+<div class="footer">
+  <div class="container">
+    <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
+      <div>© 2025 Contoso Coffee. All rights reserved.</div>
+      <div>Ethically sourced • Carbon neutral roasting • Global service network</div>
+    </div>
+  </div>
+</div>
+
+  <script>
+    console.log("Contoso Coffee site loaded");
+  </script>
+</body>
+</html>
