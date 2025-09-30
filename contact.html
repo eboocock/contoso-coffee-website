@@ -136,9 +136,11 @@ button.cta{cursor:pointer}
             <textarea id="message" name="message" rows="4" placeholder="How can we help?"></textarea>
           </div>
         </div>
-        <div class="form-actions">
-          <button class="cta" type="submit">Send</button>
-        </div>
+<div class="form-actions" style="gap:10px">
+  <button type="button" class="cta" onclick="fillDemo()">Demo Lead</button>
+  <button class="cta" type="submit">Send</button>
+</div>
+
       </form>
     </div>
   </div>
@@ -189,6 +191,24 @@ button.cta{cursor:pointer}
       source: "Contoso Coffee Website",
       submittedUtc: new Date().toISOString()
     };
+    
+<script>
+  function fillDemo() {
+    const f = document.getElementById('contactForm');
+    if (!f) return;
+
+    f.firstName.value = 'Abbi';
+    f.lastName.value  = 'Atkins';
+    f.company.value   = 'Dutch Brothers';
+    f.email.value     = 'abbiatkinsdemo@outlook.com';
+    f.interest.value  = 'Commercial Machines'; // must match the option text
+    f.message.value   = 'We need to outfit new locations with high output espresso machines.';
+
+    // Optional: bring focus to Send for quick submit
+    const sendBtn = f.querySelector('button[type="submit"]');
+    if (sendBtn) sendBtn.focus();
+  }
+</script>
 
     // Attempt 1: JSON (best)
     try {
