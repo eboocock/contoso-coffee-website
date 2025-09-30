@@ -102,9 +102,8 @@ button.cta{cursor:pointer}
 
   <div class="form-card">
     <div class="pad">
-      <div class="badge" style="margin:4px 0 12px 0">Submits to Power Automate → Dataverse Lead</div>
+      <div class="badge" style="margin:4px 0 12px 0" role="button" tabindex="0" onclick="fillDemo()" onkeypress="if(event.key==='Enter'||event.key===' ') fillDemo();" style="cursor:pointer">Update lead form with demo data</div>
       <form id="contactForm" onsubmit="event.preventDefault(); handleSubmit();">
-<div class="form-toolbar"><button type="button" class="cta" onclick="fillDemo()">Demo Lead</button></div>
         <div class="form-grid">
           <div class="field">
             <label for="firstName">First name</label>
