@@ -79,6 +79,8 @@ button.cta{cursor:pointer}
 .form-actions{display:flex;justify-content:flex-end;margin-top:8px}
 .help{font-size:12px;color:var(--muted)}
 @media (max-width:720px){.form-grid{grid-template-columns:1fr}}
+
+.form-toolbar{display:flex;justify-content:flex-end;margin-bottom:10px}
 </style>
 </head>
 <body>
@@ -102,6 +104,7 @@ button.cta{cursor:pointer}
     <div class="pad">
       <div class="badge" style="margin:4px 0 12px 0">Submits to Power Automate → Dataverse Lead</div>
       <form id="contactForm" onsubmit="event.preventDefault(); handleSubmit();">
+<div class="form-toolbar"><button type="button" class="cta" onclick="fillDemo()">Demo Lead</button></div>
         <div class="form-grid">
           <div class="field">
             <label for="firstName">First name</label>
@@ -136,11 +139,8 @@ button.cta{cursor:pointer}
             <textarea id="message" name="message" rows="4" placeholder="How can we help?"></textarea>
           </div>
         </div>
-<div class="form-actions" style="gap:10px">
-  <button type="button" class="cta" onclick="fillDemo()">Demo Lead</button>
-  <button class="cta" type="submit">Send</button>
-</div>
-
+        <div class="form-actions" style="gap:10px"><button class="cta" type="submit">Send</button>
+        </div>
       </form>
     </div>
   </div>
@@ -154,88 +154,57 @@ button.cta{cursor:pointer}
       </div>
     </div>
   </div>
-<script>
-  // 1) If you followed Option A, put your logic.azure.com URL here. https://e8f70a479a6de7fa8e5f200b78db5b.16.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/e3568631792e4c5ebd373d303d45dc65/triggers/manual/paths/invoke/?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=y-cVgYn5r_SDJ6tTA2NXKnj2edMF0JXWNlrYfNPCtM4
-  // 2) If you built Option B, put your Azure Function URL here.
-  const FLOW_URL = "https://e8f70a479a6de7fa8e5f200b78db5b.16.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/417a24ce6d1c47fc828c87cebcefd68e/triggers/manual/paths/invoke/?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=vsBnv3fGS3MGTtUBGeU13PmhNHkSS4U8YJc3SFloVRk";
+  <script>
+    // Replace with your HTTP Request trigger URL from Power Automate
+    const FLOW_URL = "https://e8f70a479a6de7fa8e5f200b78db5b.16.environment.api.powerplatform.com:443/powerautomate/automations/direct/workflows/417a24ce6d1c47fc828c87cebcefd68e/triggers/manual/paths/invoke/?api-version=1&sp=%2Ftriggers%2Fmanual%2Frun&sv=1.0&sig=vsBnv3fGS3MGTtUBGeU13PmhNHkSS4U8YJc3SFloVRk";
 
-  async function postJson(url, payload) {
-    return fetch(url, {
-      method: "POST",
-      mode: "cors",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify(payload)
-    });
-  }
-
-  async function postText(url, payload, mode = "cors") {
-    // text/plain reduces CORS friction in some browsers/gateways
-    return fetch(url, {
-      method: "POST",
-      mode,
-      headers: { "Content-Type": "text/plain;charset=UTF-8" },
-      body: JSON.stringify(payload)
-    });
-  }
-
-  async function handleSubmit() {
-    const form = document.getElementById('contactForm');
-    const data = Object.fromEntries(new FormData(form).entries());
-    const payload = {
-      firstName: data.firstName,
-      lastName: data.lastName,
-      company: data.company,
-      email: data.email,
-      interest: data.interest,
-      message: data.message || "",
-      source: "Contoso Coffee Website",
-      submittedUtc: new Date().toISOString()
-    };
-
+    async function handleSubmit(){
+      const form = document.getElementById('contactForm');
+      const data = Object.fromEntries(new FormData(form).entries());
+      const payload = {
+        firstName: data.firstName,
+        lastName: data.lastName,
+        company: data.company,
+        email: data.email,
+        interest: data.interest,
+        message: data.message || "",
+        source: "Contoso Coffee Website",
+        submittedUtc: new Date().toISOString()
+      };
+      try{
+        if(!FLOW_URL || FLOW_URL.includes("REPLACE_WITH_YOUR_FLOW_TRIGGER_URL")) throw new Error("No Flow URL set");
+        const res = await fetch(FLOW_URL, { method:"POST", headers:{ "Content-Type": "application/json" }, body: JSON.stringify(payload) });
+        if(!res.ok) throw new Error("Flow returned " + res.status);
+        alert("Thanks! Your message was sent.");
+        form.reset();
+      }catch(e){
+        console.warn("Falling back to local download:", e);
+        const blob = new Blob([JSON.stringify(payload,null,2)], {type:'application/json'});
+        const url = URL.createObjectURL(blob);
+        const a = document.createElement('a');
+        a.href = url;
+        const ts = new Date().toISOString().slice(0,19).replace(/[:T]/g,'-');
+        a.download = 'contoso-contact-'+ts+'.json';
+        document.body.appendChild(a); a.click(); a.remove(); URL.revokeObjectURL(url);
+        alert("Saved your submission as a file. Set FLOW_URL to send to Power Automate.");
+      }
+    }
+  
   function fillDemo() {
     const f = document.getElementById('contactForm');
     if (!f) return;
-
     f.firstName.value = 'Abbi';
     f.lastName.value  = 'Atkins';
     f.company.value   = 'Dutch Brothers';
     f.email.value     = 'abbiatkinsdemo@outlook.com';
-    f.interest.value  = 'Commercial Machines'; // must match the option text
+    if ([...f.interest.options].some(o => (o.text || o.value) === 'Commercial Machines')) {
+      f.interest.value = 'Commercial Machines';
+    } else if (f.interest.options.length) {
+      f.interest.selectedIndex = 1;
+    }
     f.message.value   = 'We need to outfit new locations with high output espresso machines.';
-
-    // Optional: bring focus to Send for quick submit
     const sendBtn = f.querySelector('button[type="submit"]');
     if (sendBtn) sendBtn.focus();
-  }
-
-  
-    // Attempt 1: JSON (best)
-    try {
-      const r1 = await postJson(FLOW_URL, payload);
-      if (r1.ok) { alert("Thanks! Your message was sent."); form.reset(); return; }
-      throw new Error("Status " + r1.status);
-    } catch (e1) {
-      console.warn("JSON post failed:", e1);
-    }
-
-    // Attempt 2: text/plain (simple CORS)
-    try {
-      const r2 = await postText(FLOW_URL, payload, "cors");
-      if (r2.ok) { alert("Thanks! Your message was sent."); form.reset(); return; }
-      throw new Error("Status " + r2.status);
-    } catch (e2) {
-      console.warn("text/plain post failed:", e2);
-    }
-
-    // Attempt 3: no-cors (fire-and-forget)
-    try {
-      await postText(FLOW_URL, payload, "no-cors");
-      alert("Submitted. If it doesn't appear, check your Flow run history.");
-      form.reset();
-    } catch (e3) {
-      alert("We couldn't submit due to network restrictions. Please email sales@contoso.example.");
-      console.error(e3);
-    }
   }
 </script>
 </body>
