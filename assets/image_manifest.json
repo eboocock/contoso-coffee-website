@@ -1,0 +1,4 @@
+{
+  "unique_product_images": [],
+  "note": "Product images use picsum.photos seeded by SKU to guarantee unique URLs; other pages use distinct Pexels/Pixabay URLs."
+}
