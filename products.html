@@ -1,1223 +1,281 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Products • Contoso Coffee</title>
-  <meta name="description" content="Contoso Coffee product catalog"/>
-  <style>
-:root{
-  --bg:#0f0a08; --surface:#17110e; --card:#211813; --text:#f5efe9; --muted:#cbbfba;
-  --brand:#c08a59; --line:rgba(255,255,255,.10);
-}
-*{box-sizing:border-box} html,body{margin:0;padding:0;background:var(--bg);color:var(--text);
-  font-family:Inter,Segoe UI,Roboto,Arial,sans-serif; line-height:1.6}
-a{color:var(--brand);text-decoration:none} a:hover{text-decoration:underline}
-.container{max-width:1200px;margin:0 auto;padding:0 22px}
-/* Header (consistent site style) */
-.nav{position:sticky;top:0;z-index:30;background:rgba(15,10,8,.75);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav .row{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:12px 0}
-.brand{display:flex;gap:10px;align-items:center}
-.menu{display:flex;gap:14px}
-.menu a{padding:8px 12px;border-radius:10px}
-.menu a.active,.menu a:hover{background:rgba(255,255,255,.06)}
-/* Hero kept minimal to leave room above fold */
-.hero{padding:18px 0;border-bottom:1px solid var(--line)}
-.hero h1{margin:0 0 6px;font-size:36px}
-.lead{font-size:16px;color:var(--muted)}
-.section{padding:22px 0}
-/* Category index chips */
-.index{display:flex;gap:8px;flex-wrap:wrap;margin-top:8px}
-.index a{display:inline-block;padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--text);background:rgba(255,255,255,.04)}
-.index a:hover{background:rgba(255,255,255,.08)}
-/* Dense product grid */
-.grid{display:grid;gap:16px}
-.cards{grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 10px 26px rgba(0,0,0,.28);transition:transform .15s ease, box-shadow .15s ease}
-.card:hover{transform:translateY(-2px);box-shadow:0 14px 34px rgba(0,0,0,.38)}
-.thumb{width:100%;aspect-ratio:16/10;object-fit:cover;background:#120d0b}
-.pad{padding:12px}
-.title{margin:6px 0 4px;font-size:18px}
-.meta{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0}
-.pill{padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px}
-/* Specs table condensed */
-.specs{width:100%;border-collapse:collapse;margin-top:6px}
-.specs th,.specs td{border-bottom:1px dashed var(--line);padding:6px 8px;text-align:left;font-size:13px}
-.specs th{width:40%;color:var(--muted);font-weight:600}
-.footer{margin-top:36px;border-top:1px solid var(--line);padding:24px 0;color:var(--muted);background:var(--surface);text-align:center}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Products - Contoso Coffee</title>
+    <link rel="stylesheet" href="contoso-coffee-styles.css">
+    <style>
+        .product-card {
+            position: relative;
+            overflow: hidden;
+        }
+
+        .product-image {
+            width: 100%;
+            height: 200px;
+            background: linear-gradient(135deg, var(--coffee-light) 0%, var(--coffee-medium) 100%);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 4rem;
+            margin-bottom: 1rem;
+            border-radius: var(--radius-md);
+        }
+
+        .product-tag {
+            position: absolute;
+            top: 1rem;
+            right: 1rem;
+            background-color: var(--accent-gold);
+            color: var(--coffee-dark);
+            padding: 0.25rem 0.75rem;
+            border-radius: var(--radius-sm);
+            font-size: 0.875rem;
+            font-weight: 600;
+        }
+
+        .price {
+            font-size: 1.5rem;
+            color: var(--accent-gold);
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+    </style>
 </head>
 <body>
-  
-<div class="nav">
-  <div class="container row">
-    <a class="brand" href="index.html" aria-label="Contoso Coffee Home"><strong>Contoso Coffee</strong></a>
-    <nav class="menu">
-      <a href="index.html">Home</a>
-      <a href="products.html" class="active">Products</a>
-      <a href="customers.html">Customer Success</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-  </div>
-</div>
-
-  <section class="hero">
-    <div class="container">
-      <h1>Products</h1>
-      <p class="lead">Browse our catalog. We show only the essentials for faster scanning — Category, List Price, and key Specifications.</p>
-      <div class="index"><a href="#commercial-espresso">COMMERCIAL ESPRESSO</a><a href="#consumer-espresso">CONSUMER ESPRESSO</a><a href="#coffee-beans">COFFEE BEANS</a><a href="#commercial-coffee-grinders">COMMERCIAL COFFEE GRINDERS</a><a href="#commercial-coffee-makers">COMMERCIAL COFFEE MAKERS</a><a href="#commercial-subscription">COMMERCIAL SUBSCRIPTION</a><a href="#consumer-coffee-grinders">CONSUMER COFFEE GRINDERS</a><a href="#consumer-coffee-makers">CONSUMER COFFEE MAKERS</a><a href="#drinkware">DRINKWARE</a><a href="#other">Other</a><a href="#services">SERVICES</a></div>
-    </div>
-  </section>
-  
-<section class="container section" id="commercial-espresso">
-  <h2 style="margin:0 0 8px">COMMERCIAL ESPRESSO</h2>
-  <div class="grid cards">
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL ESPRESSO</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Café Lite</td></tr><tr><th>Product ID</th><td>USRTCALTB</td></tr><tr><th>Valid From</th><td>6/1/2020</td></tr><tr><th>Valid To</th><td>5/31/2021</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>7103.00</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL ESPRESSO</span>
-      <span class="pill">List Price: $21,900.00</span>
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Café A-100 Automatic</td></tr><tr><th>Product ID</th><td>CAA100AU</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Services</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL ESPRESSO</span>
-      <span class="pill">List Price: $16,900.00</span>
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Café Corto</td></tr><tr><th>Product ID</th><td>CACO</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Services</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL ESPRESSO</span>
-      <span class="pill">List Price: $12,900.00</span>
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Café Duo</td></tr><tr><th>Product ID</th><td>CADU</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Services</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL ESPRESSO</span>
-      <span class="pill">List Price: $14,900.00</span>
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Café Grande</td></tr><tr><th>Product ID</th><td>CAGR</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Services</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL ESPRESSO</span>
-      <span class="pill">List Price: $17,900.00</span>
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Café S-100 Semi-Automatic</td></tr><tr><th>Product ID</th><td>CAS100SA</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Services</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL ESPRESSO</span>
-      <span class="pill">List Price: $21,900.00</span>
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Barista Express</td></tr><tr><th>Product ID</th><td>BAECOMM</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Services</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL ESPRESSO</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Café A-200 Automatic</td></tr><tr><th>Product ID</th><td>CA200AB</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL ESPRESSO</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Café S-200 Semi-Automatic</td></tr><tr><th>Product ID</th><td>CA200SB</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-</div>
-</section>
-
-<section class="container section" id="consumer-espresso">
-  <h2 style="margin:0 0 8px">CONSUMER ESPRESSO</h2>
-  <div class="grid cards">
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER ESPRESSO</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Barista Home</td></tr><tr><th>Product ID</th><td>BAHMC</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER ESPRESSO</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Barista Lite</td></tr><tr><th>Product ID</th><td>BALTC</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER ESPRESSO</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Crema Café</td></tr><tr><th>Product ID</th><td>CRCAC</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER ESPRESSO</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Crema Café XL</td></tr><tr><th>Product ID</th><td>CRCAXLC</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER ESPRESSO</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Crema Quatro</td></tr><tr><th>Product ID</th><td>CRQTC</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-</div>
-</section>
-
-<section class="container section" id="coffee-beans">
-  <h2 style="margin:0 0 8px">COFFEE BEANS</h2>
-  <div class="grid cards">
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COFFEE BEANS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Classic Roast</td></tr><tr><th>Product ID</th><td>COF-CLASSIC</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COFFEE BEANS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Columbian Roasts</td></tr><tr><th>Product ID</th><td>COF-COLUMBIAN</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COFFEE BEANS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Decaf Roast</td></tr><tr><th>Product ID</th><td>COFF-DECAF</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COFFEE BEANS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Ethopian</td></tr><tr><th>Product ID</th><td>COFF-ETHIOPIAN</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-</div>
-</section>
-
-<section class="container section" id="commercial-coffee-grinders">
-  <h2 style="margin:0 0 8px">COMMERCIAL COFFEE GRINDERS</h2>
-  <div class="grid cards">
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL COFFEE GRINDERS</span>
-      <span class="pill">List Price: $4,999.00</span>
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Café BG-1</td></tr><tr><th>Product ID</th><td>CABG1</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Services</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL COFFEE GRINDERS</span>
-      <span class="pill">List Price: $3,999.00</span>
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Café PG-1</td></tr><tr><th>Product ID</th><td>CAPG1</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Services</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL COFFEE GRINDERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Café BG-1 Pro</td></tr><tr><th>Product ID</th><td>CAB1PB</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL COFFEE GRINDERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Café PG-1 Pro</td></tr><tr><th>Product ID</th><td>CAP1PB</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-</div>
-</section>
-
-<section class="container section" id="commercial-coffee-makers">
-  <h2 style="margin:0 0 8px">COMMERCIAL COFFEE MAKERS</h2>
-  <div class="grid cards">
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL COFFEE MAKERS</span>
-      <span class="pill">List Price: $1,699.00</span>
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Airpot</td></tr><tr><th>Product ID</th><td>AP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Services</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL COFFEE MAKERS</span>
-      <span class="pill">List Price: $499.00</span>
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Airpot XL</td></tr><tr><th>Product ID</th><td>APXL</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Services</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL COFFEE MAKERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Airpot Duo</td></tr><tr><th>Product ID</th><td>APD</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL COFFEE MAKERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Airpot Lite</td></tr><tr><th>Product ID</th><td>APL</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-</div>
-</section>
-
-<section class="container section" id="commercial-subscription">
-  <h2 style="margin:0 0 8px">COMMERCIAL SUBSCRIPTION</h2>
-  <div class="grid cards">
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL SUBSCRIPTION</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Silver Coffee Subscription</td></tr><tr><th>Product ID</th><td>SUB-SLVRCOFF</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Bundle</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr><tr><th>Subject</th><td>Subscription</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL SUBSCRIPTION</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Gold Coffee Subscription</td></tr><tr><th>Product ID</th><td>SUB-GOLDCOFF</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Bundle</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr><tr><th>Subject</th><td>Subscription</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL SUBSCRIPTION</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Platinum Coffee Subscription</td></tr><tr><th>Product ID</th><td>SUB-PLATCOFF</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Bundle</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr><tr><th>Subject</th><td>Subscription</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL SUBSCRIPTION</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>1-Year Fair Trade Coffee Subscription</td></tr><tr><th>Product ID</th><td>CM-FAIR1YR</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL SUBSCRIPTION</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>2-Year Fair Trade Coffee Subscription</td></tr><tr><th>Product ID</th><td>CM-FAIR2YR</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL SUBSCRIPTION</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>1-Year Espresso Blend Coffee Subscription</td></tr><tr><th>Product ID</th><td>CM-EBSUB1YR</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL SUBSCRIPTION</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>2-Year Espresso Blend Subscription</td></tr><tr><th>Product ID</th><td>CM-EBSUB2YR</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL SUBSCRIPTION</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>1-Year Organic Office Coffee Subscription</td></tr><tr><th>Product ID</th><td>CM-ORGO1YR</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL SUBSCRIPTION</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>2-Year Organic Office Coffee Subscription</td></tr><tr><th>Product ID</th><td>CM-ORGO2YR</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">COMMERCIAL SUBSCRIPTION</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>6-Month Fair Trade Coffee Subscription</td></tr><tr><th>Product ID</th><td>CM-FAIR6MTH</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-</div>
-</section>
-
-<section class="container section" id="consumer-coffee-grinders">
-  <h2 style="margin:0 0 8px">CONSUMER COFFEE GRINDERS</h2>
-  <div class="grid cards">
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER COFFEE GRINDERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Precision Grind Travel</td></tr><tr><th>Product ID</th><td>PRGRTRC</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER COFFEE GRINDERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Smart Grind Travel</td></tr><tr><th>Product ID</th><td>SMGRTRC</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER COFFEE GRINDERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Precision Grind Home</td></tr><tr><th>Product ID</th><td>PGH</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER COFFEE GRINDERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Smart Grind Home</td></tr><tr><th>Product ID</th><td>SMGRHMC</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-</div>
-</section>
-
-<section class="container section" id="consumer-coffee-makers">
-  <h2 style="margin:0 0 8px">CONSUMER COFFEE MAKERS</h2>
-  <div class="grid cards">
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER COFFEE MAKERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Travel Brew</td></tr><tr><th>Product ID</th><td>USRTTRBRC</td></tr><tr><th>Valid From</th><td>6/1/2020</td></tr><tr><th>Valid To</th><td>5/31/2021</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>213.00</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER COFFEE MAKERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Smart Brew 300</td></tr><tr><th>Product ID</th><td>USRTSMBRC</td></tr><tr><th>Valid From</th><td>6/1/2020</td></tr><tr><th>Valid To</th><td>5/31/2021</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>238.00</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER COFFEE MAKERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Precision Brew 100</td></tr><tr><th>Product ID</th><td>USRTPBRC</td></tr><tr><th>Valid From</th><td>6/1/2020</td></tr><tr><th>Valid To</th><td>5/31/2021</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>313.00</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER COFFEE MAKERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>AutoDrip XL</td></tr><tr><th>Product ID</th><td>USRTADXL</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>219.00</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Quantity</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER COFFEE MAKERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>AutoDrip Lite</td></tr><tr><th>Product ID</th><td>USRTADLITE</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>149.00</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Quantity</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER COFFEE MAKERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Travel Brew 100</td></tr><tr><th>Product ID</th><td>TRBRC</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">CONSUMER COFFEE MAKERS</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>AutoDrip</td></tr><tr><th>Product ID</th><td>AD</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-</div>
-</section>
-
-<section class="container section" id="drinkware">
-  <h2 style="margin:0 0 8px">DRINKWARE</h2>
-  <div class="grid cards">
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Accu Scale</td></tr><tr><th>Product ID</th><td>ACSC-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Cleaning Kit</td></tr><tr><th>Product ID</th><td>DXDCTR</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Travel Mug</td></tr><tr><th>Product ID</th><td>TRMU-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Travel Mug XL</td></tr><tr><th>Product ID</th><td>TRMUXL-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Brew Filters</td></tr><tr><th>Product ID</th><td>BRFI-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Carafe Pro</td></tr><tr><th>Product ID</th><td>CAPR-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>CP Cappuccino Cup with Saucer</td></tr><tr><th>Product ID</th><td>CPCASA-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>CP Latte Cup with Saucer</td></tr><tr><th>Product ID</th><td>CPLASA-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Cupping Glass</td></tr><tr><th>Product ID</th><td>CUGL-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Deluxe Decanter</td></tr><tr><th>Product ID</th><td>DEDE-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Drink Spoon</td></tr><tr><th>Product ID</th><td>DRSP-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Frothing Pitcher</td></tr><tr><th>Product ID</th><td>FRPI-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Quick Kettle</td></tr><tr><th>Product ID</th><td>QUKE-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Stainless Steel Tamper</td></tr><tr><th>Product ID</th><td>STSTTA-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Storage Canister</td></tr><tr><th>Product ID</th><td>SMW300</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">DRINKWARE</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Diner Mug</td></tr><tr><th>Product ID</th><td>DIMU-SP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-</div>
-</section>
-
-<section class="container section" id="other">
-  <h2 style="margin:0 0 8px">Other</h2>
-  <div class="grid cards">
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Barista Home Express</td></tr><tr><th>Product ID</th><td>USRTBAHMC</td></tr><tr><th>Status</th><td>Retired</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>594.00</td></tr><tr><th>Default Unit</th><td>Quantity</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr><tr><th>Standard Cost</th><td>594.00</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Precision Brew Lite</td></tr><tr><th>Product ID</th><td>USRTPRBRLC</td></tr><tr><th>Valid From</th><td>6/1/2020</td></tr><tr><th>Valid To</th><td>5/31/2021</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>231.00</td></tr><tr><th>Default Unit</th><td>Quantity</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Cafe A-100 Automatic</td></tr><tr><th>Product ID</th><td>USRTCA100AB</td></tr><tr><th>Status</th><td>Retired</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>15380.00</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Quantity</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Smart Brew 300 LED Screen</td></tr><tr><th>Product ID</th><td>USRTSTCAN</td></tr><tr><th>Valid From</th><td>6/1/2020</td></tr><tr><th>Valid To</th><td>5/31/2021</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>125.00</td></tr><tr><th>Default Unit</th><td>Quantity</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Smart Brew 300 - Circuit Board</td></tr><tr><th>Product ID</th><td>USRTDXDCTR</td></tr><tr><th>Valid From</th><td>6/1/2020</td></tr><tr><th>Valid To</th><td>5/31/2021</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>175.00</td></tr><tr><th>Default Unit</th><td>Quantity</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Smart Brew 300 Wiring</td></tr><tr><th>Product ID</th><td>USRTSMW300</td></tr><tr><th>Valid From</th><td>6/1/2020</td></tr><tr><th>Valid To</th><td>5/31/2021</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>75.00</td></tr><tr><th>Default Unit</th><td>Quantity</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Brew Filter</td></tr><tr><th>Product ID</th><td>USRTBRFI-SP</td></tr><tr><th>Status</th><td>Retired</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Current Cost</th><td>19.00</td></tr><tr><th>Default Unit</th><td>Quantity</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr><tr><th>Standard Cost</th><td>19.00</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>COMMERCIAL SUBSCRIPTION</td></tr><tr><th>Product ID</th><td>CM-SUBS</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Family</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>COFFEE BEANS</td></tr><tr><th>Product ID</th><td>COBNS</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Family</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>CONSUMER ESPRESSO</td></tr><tr><th>Product ID</th><td>CS-ESP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Family</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>CONSUMER COFFEE MAKERS</td></tr><tr><th>Product ID</th><td>CS-CFM</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Family</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>COMMERCIAL ESPRESSO</td></tr><tr><th>Product ID</th><td>CM-ESP</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Family</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>COMMERCIAL COFFEE MAKERS</td></tr><tr><th>Product ID</th><td>CM-CFM</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Family</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>CONSUMER COFFEE GRINDERS</td></tr><tr><th>Product ID</th><td>CS-GRD</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Family</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>COMMERCIAL COFFEE GRINDERS</td></tr><tr><th>Product ID</th><td>CM-GRD</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Family</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>DRINKWARE</td></tr><tr><th>Product ID</th><td>ACS-DRW</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Family</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">Other</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>SERVICES</td></tr><tr><th>Product ID</th><td>SRC</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product Family</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-</div>
-</section>
-
-<section class="container section" id="services">
-  <h2 style="margin:0 0 8px">SERVICES</h2>
-  <div class="grid cards">
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">SERVICES</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Equipment Installation</td></tr><tr><th>Product ID</th><td>INST-EQUIP001</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">SERVICES</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Water Filter</td></tr><tr><th>Product ID</th><td>PART-WTRFILT001</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">SERVICES</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Water line</td></tr><tr><th>Product ID</th><td>CAWATLN</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">SERVICES</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Capacity IoT sensor</td></tr><tr><th>Product ID</th><td>CACAPIOTSENS</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-
-
-<article class="card">
-  <img class="thumb" src="https://picsum.photos/seed/contoso/1200/800" alt="Product image"/>
-  <div class="pad">
-    <h3 class="title">Product</h3>
-    <div class="meta">
-      <span class="pill">SERVICES</span>
-      
-    </div>
-    <table class="specs"><tr><th>﻿Name</th><td>Descaling Solution</td></tr><tr><th>Product ID</th><td>CADESCSOL</td></tr><tr><th>Status</th><td>Active</td></tr><tr><th>Product Structure</th><td>Product</td></tr><tr><th>Default Price List</th><td>Contoso Coffee Price List</td></tr><tr><th>Default Unit</th><td>Primary Unit</td></tr><tr><th>Product Type</th><td>Sales Inventory</td></tr></table>
-  </div>
-</article>
-</div>
-</section>
-
-  <div class="footer">© 2025 Contoso Coffee • Ethically sourced • Carbon‑neutral roasting</div>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">☕</span>
+                Contoso Coffee
+            </a>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html" class="active">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Coffee Products</h1>
+            <p>Discover our curated selection of professional-grade coffee solutions</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Coffee Beans & Blends</h2>
+                <p>Sourced from the world's finest coffee-growing regions</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card product-card">
+                    <span class="product-tag">Best Seller</span>
+                    <div class="product-image">☕</div>
+                    <h3>House Blend</h3>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Medium roast • Smooth & balanced</p>
+                    <p class="price">$45.00/5lb</p>
+                    <p>Our signature blend combining beans from Colombia, Brazil, and Ethiopia. Perfect for all-day drinking.</p>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Quote</button>
+                </div>
+
+                <div class="card product-card">
+                    <div class="product-image">☕</div>
+                    <h3>Dark Roast Premium</h3>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Dark roast • Bold & rich</p>
+                    <p class="price">$48.00/5lb</p>
+                    <p>Intense flavor with notes of dark chocolate and caramel. Ideal for espresso and strong coffee lovers.</p>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Quote</button>
+                </div>
+
+                <div class="card product-card">
+                    <span class="product-tag">New</span>
+                    <div class="product-image">☕</div>
+                    <h3>Light Roast Select</h3>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Light roast • Bright & fruity</p>
+                    <p class="price">$52.00/5lb</p>
+                    <p>Single-origin Ethiopian beans with floral notes and citrus undertones. Perfect for pour-over.</p>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Quote</button>
+                </div>
+
+                <div class="card product-card">
+                    <div class="product-image">☕</div>
+                    <h3>Decaf Excellence</h3>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Medium roast • Swiss water process</p>
+                    <p class="price">$50.00/5lb</p>
+                    <p>Full flavor without the caffeine. Our Swiss water process preserves the rich taste you love.</p>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Quote</button>
+                </div>
+
+                <div class="card product-card">
+                    <div class="product-image">☕</div>
+                    <h3>Espresso Supremo</h3>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Dark roast • Espresso blend</p>
+                    <p class="price">$55.00/5lb</p>
+                    <p>Specially crafted for espresso machines. Creates perfect crema with intense, complex flavors.</p>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Quote</button>
+                </div>
+
+                <div class="card product-card">
+                    <div class="product-image">☕</div>
+                    <h3>Seasonal Reserve</h3>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Varies • Limited edition</p>
+                    <p class="price">$65.00/5lb</p>
+                    <p>Rotating selection of micro-lot coffees from award-winning farms. Current: Guatemala Huehuetenango.</p>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: var(--gray-light);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Professional Equipment</h2>
+                <p>Commercial-grade machines for consistent, quality results</p>
+            </div>
+
+            <div class="grid grid-2">
+                <div class="card product-card">
+                    <span class="product-tag">Top Rated</span>
+                    <div class="product-image">⚙️</div>
+                    <h3>Commercial Espresso Machine Pro</h3>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Semi-automatic • 2-group head</p>
+                    <p class="price">$8,500.00</p>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Professional dual-boiler system</li>
+                        <li>PID temperature control</li>
+                        <li>Volumetric dosing</li>
+                        <li>3-year warranty included</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Quote</button>
+                </div>
+
+                <div class="card product-card">
+                    <div class="product-image">⚙️</div>
+                    <h3>Batch Brewer Commercial</h3>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Automatic • 3-gallon capacity</p>
+                    <p class="price">$2,400.00</p>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Brews up to 50 cups per hour</li>
+                        <li>Digital controls with presets</li>
+                        <li>Hot water dispenser included</li>
+                        <li>Easy maintenance design</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Quote</button>
+                </div>
+
+                <div class="card product-card">
+                    <div class="product-image">⚙️</div>
+                    <h3>Coffee Grinder Industrial</h3>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Commercial • Burr grinder</p>
+                    <p class="price">$1,800.00</p>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>64mm flat burrs</li>
+                        <li>Stepless grind adjustment</li>
+                        <li>2.5 lb hopper capacity</li>
+                        <li>Low-retention design</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Quote</button>
+                </div>
+
+                <div class="card product-card">
+                    <div class="product-image">⚙️</div>
+                    <h3>Cold Brew System</h3>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Commercial • 5-gallon</p>
+                    <p class="price">$950.00</p>
+                    <ul style="margin-left: 1.5rem; margin-bottom: 1rem;">
+                        <li>Stainless steel construction</li>
+                        <li>24-hour brewing cycle</li>
+                        <li>Easy-clean filters</li>
+                        <li>Includes dispensing tap</li>
+                    </ul>
+                    <button class="btn btn-primary" style="width: 100%; margin-top: 1rem;">Request Quote</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Supplies & Accessories</h2>
+                <p>Everything you need to keep your operation running smoothly</p>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🥤</div>
+                    <h4>Paper Cups</h4>
+                    <p style="color: var(--gray-medium); font-size: 0.875rem; margin-bottom: 0.5rem;">8oz, 12oz, 16oz, 20oz</p>
+                    <p style="font-weight: 600; color: var(--coffee-medium);">From $35/case</p>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🥛</div>
+                    <h4>Milk & Cream</h4>
+                    <p style="color: var(--gray-medium); font-size: 0.875rem; margin-bottom: 0.5rem;">Whole, 2%, almond, oat</p>
+                    <p style="font-weight: 600; color: var(--coffee-medium);">From $28/case</p>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🍰</div>
+                    <h4>Syrups & Flavors</h4>
+                    <p style="color: var(--gray-medium); font-size: 0.875rem; margin-bottom: 0.5rem;">20+ flavors available</p>
+                    <p style="font-weight: 600; color: var(--coffee-medium);">$45/bottle</p>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 3rem; margin-bottom: 0.5rem;">🧹</div>
+                    <h4>Cleaning Supplies</h4>
+                    <p style="color: var(--gray-medium); font-size: 0.875rem; margin-bottom: 0.5rem;">Descalers, brushes, tablets</p>
+                    <p style="font-weight: 600; color: var(--coffee-medium);">From $12/item</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: var(--coffee-dark); color: var(--white); text-align: center; padding: 4rem 2rem;">
+        <div class="container">
+            <h2 style="color: var(--white); margin-bottom: 1rem;">Need Help Choosing?</h2>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">Our coffee specialists are here to help you find the perfect solution</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Speak with a Specialist</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About Contoso Coffee</h4>
+                    <p>Premium coffee solutions for businesses worldwide. From bean to cup, we deliver excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@contosocoffee.com</p>
+                    <p>Phone: 1-800-CONTOSO</p>
+                    <p>Hours: Mon-Fri 8AM-6PM PST</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Contoso Coffee. All rights reserved.</p>
+                <p>Crafted with passion for coffee excellence.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>

@@ -1,113 +1,174 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"/>
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
-  <title>Home • Contoso Coffee</title>
-  <meta name="description" content="Contoso Coffee — commercial and consumer coffee solutions"/>
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml"/>
-  <style>
-:root{
-  --bg:#0f0a08;
-  --surface:#17110e;
-  --card:#211813;
-  --text:#f5efe9;
-  --muted:#cbbfba;
-  --brand:#c08a59;
-  --line:rgba(255,255,255,.08);
-}
-*{box-sizing:border-box}
-html,body{margin:0;padding:0;background:var(--bg);color:var(--text);font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;line-height:1.55}
-a{color:var(--brand);text-decoration:none}
-a:hover{text-decoration:underline}
-.container{max-width:1180px;margin:0 auto;padding:0 22px}
-.nav{position:sticky;top:0;z-index:30;background:rgba(15,10,8,.75);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.nav .row{display:flex;gap:16px;align-items:center;justify-content:space-between;padding:12px 0}
-.brand{display:flex;gap:10px;align-items:center}
-.brand img{height:34px}
-.menu{display:flex;gap:14px}
-.menu a{padding:8px 12px;border-radius:10px}
-.menu a.active,.menu a:hover{background:rgba(255,255,255,.06)}
-.hero{position:relative}
-.hero img{width:100%;height:56vh;object-fit:cover;border-bottom:1px solid var(--line)}
-.hero .overlay{position:absolute;inset:0;display:grid;place-items:center;text-align:center;background:linear-gradient(transparent,rgba(15,10,8,.35),rgba(15,10,8,.92))}
-h1{font-size:46px;margin:0 0 8px}
-.lead{font-size:18px;color:var(--muted);max-width:900px;margin:0 auto}
-.section{padding:36px 0}
-.kicker{color:var(--brand);text-transform:uppercase;letter-spacing:.12em;font-size:12px;margin-bottom:6px}
-.grid{display:grid;gap:20px}
-.cards{grid-template-columns:repeat(auto-fit,minmax(260px,1fr))}
-.card{background:var(--card);border:1px solid var(--line);border-radius:18px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,.28)}
-.card .thumb{width:100%;aspect-ratio:16/9;object-fit:cover;display:block}
-.card .pad{padding:16px}
-.badge{display:inline-block;padding:6px 10px;border-radius:999px;background:rgba(192,138,89,.16);color:#efd9c4;border:1px solid rgba(192,138,89,.35);font-size:12px}
-.table{width:100%;border-collapse:collapse}
-.table th,.table td{border-bottom:1px solid var(--line);padding:8px;text-align:left}
-.cta{display:inline-block;padding:12px 16px;border-radius:12px;background:var(--brand);color:#160e0b;font-weight:800;border:1px solid var(--line)}
-.footer{margin-top:56px;border-top:1px solid var(--line);padding:28px 0;color:var(--muted);background:var(--surface)}
-/* Accordion (products) */
-.accordion-controls{display:flex;gap:10px;align-items:center;margin:8px 0 18px}
-.acc-btn{width:100%;text-align:left;display:flex;justify-content:space-between;align-items:center;padding:16px 18px;border-radius:14px;background:rgba(255,255,255,.04);border:1px solid var(--line);font-weight:800;font-size:17px;color:inherit;box-shadow:0 6px 20px rgba(0,0,0,.25)}
-.acc-btn:hover{background:rgba(255,255,255,.06)}
-.acc-btn .chev{transition:transform .18s ease}
-.acc-panel{display:none;padding:12px 0 4px}
-.acc-panel.open{display:block}
-/* Product internals */
-.product-meta{display:flex;gap:12px;flex-wrap:wrap;margin:8px 0}
-.pill{padding:6px 10px;border:1px solid var(--line);border-radius:999px;color:var(--muted);font-size:12px}
-.product-body{display:grid;grid-template-columns:1fr 1fr;gap:20px}
-.product-body h4{margin:0 0 6px 0}
-ul.feats{margin:8px 0 0 18px}
-.specs{width:100%;border-collapse:collapse}
-.specs th,.specs td{border-bottom:1px dashed var(--line);padding:8px 10px;text-align:left;font-size:14px}
-.specs th{width:42%;color:var(--muted);font-weight:600}
-.card-footer{display:flex;justify-content:space-between;align-items:center;gap:10px;flex-wrap:wrap;margin-top:12px}
-.price{font-weight:800;font-size:16px}
-input,select,textarea{background:#130d0a;color:var(--text);border:1px solid var(--line);padding:12px;border-radius:10px;font-size:15px}
-button{all:unset}
-button.cta{cursor:pointer}
-@media (max-width:860px){.product-body{grid-template-columns:1fr}.hero img{height:44vh}}
-</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contoso Coffee - Premium Business Coffee Solutions</title>
+    <link rel="stylesheet" href="contoso-coffee-styles.css">
 </head>
 <body>
-  
-<div class="nav">
-  <div class="container row">
-    <a class="brand" href="index.html" aria-label="Contoso Coffee Home">
-      <img src="assets/img/logo.svg" alt="Contoso Coffee logo"/><strong>Contoso Coffee</strong>
-    </a>
-    <nav class="menu"><a href="index.html" class="active">Home</a><a href="products.html" class="">Products</a><a href="customers.html" class="">Customer Success</a><a href="contact.html" class="">Contact</a></nav>
-  </div>
-</div>
+    <header>
+        <nav>
+            <a href="index.html" class="logo">
+                <span class="logo-icon">☕</span>
+                Contoso Coffee
+            </a>
+            <ul>
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
 
-  
-<div class="hero">
-  <img src="https://images.pexels.com/photos/324028/pexels-photo-324028.jpeg?cs=srgb&fm=jpg&w=2000" alt="Barista pulling espresso"/>
-  <div class="overlay">
-    <div>
-      <h1>Brew excellence. At scale.</h1>
-      <p class="lead">Welcome to Contoso Coffee Experience premium coffee machines and supplies that are eco-friendly. Presentation Overview Introducing Contoso Coffee Brand Contoso Coffee is a premium coffee brand committed to delivering the highest quality coffee experience. We believe in innovation, sustainability, and social responsibility. Product Range Our product range includes premium coffee machines and supplies that are designed to deliver the perfect coffee experience. Our products are easy to use, efficient and sustainable. Commitment to Sustainability At Contoso Coffee, we are committed to reducing our environmental impact and promoting sustainable practices. We strive to minimize waste and reduce our carbon footprint in everything we do. Our Values and Mission Mission Statement Our mission at Contoso Coffee is to provide high-quality coffee machines and supplies while promoting sustainability.</p>
-      <div style="margin-top:18px"><a class="cta" href="products.html">Explore Products</a></div>
-    </div>
-  </div>
-</div>
-<div class="container section">
-  <div class="kicker">Why Contoso</div>
-  <h2>Machines, beans, and service that just work</h2>
-  <div class="grid cards">
-    <div class="card"><img class="thumb" src="https://images.pexels.com/photos/302899/pexels-photo-302899.jpeg?cs=srgb&fm=jpg&w=1600" alt="Commercial machines"/><div class="pad"><div class="badge">Portfolio</div><h3>Commercial & Consumer</h3><p>From café-grade super-automatics to compact home machines—engineered for consistency, speed, and flavor.</p><a href="products.html">See products →</a></div></div>
-    <div class="card"><img class="thumb" src="https://images.pexels.com/photos/6931054/pexels-photo-6931054.jpeg?cs=srgb&fm=jpg&w=1600" alt="Customer training"/><div class="pad"><div class="badge">Service</div><h3>Nationwide Support</h3><p>Install, train, and maintain with certified technicians and proactive service plans that reduce downtime.</p><a href="customers.html">Customer stories →</a></div></div>
-    <div class="card"><img class="thumb" src="https://images.pexels.com/photos/3404701/pexels-photo-3404701.jpeg?cs=srgb&fm=jpg&w=1600" alt="Sustainable sourcing"/><div class="pad"><div class="badge">Sustainability</div><h3>Responsible by design</h3><p>Energy‑efficient machines and ethically sourced beans—good for your business and the planet.</p><a href="contact.html">Talk to us →</a></div></div>
-  </div>
-</div>
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Premium Coffee Solutions for Your Business</h1>
+            <p>From bean to cup, we deliver excellence in every sip. Trusted by cafés, restaurants, and offices worldwide.</p>
+            <div style="margin-top: 2rem; display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                <a href="products.html" class="btn btn-primary btn-large">Explore Products</a>
+                <a href="contact.html" class="btn btn-secondary btn-large">Get a Quote</a>
+            </div>
+        </div>
+    </section>
 
-  <div class="footer">
-    <div class="container">
-      <div style="display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap">
-        <div>© 2025 Contoso Coffee. All rights reserved.</div>
-        <div>Ethically sourced • Carbon-neutral roasting • Global service</div>
-      </div>
-    </div>
-  </div>
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Why Choose Contoso Coffee?</h2>
+                <p>Excellence in every aspect of our business</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">🌱</div>
+                    <h3 style="text-align: center;">Sustainably Sourced</h3>
+                    <p style="text-align: center; color: var(--gray-medium);">We partner with ethical farms worldwide to bring you the finest coffee beans while supporting local communities.</p>
+                </div>
+
+                <div class="card">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">⚡</div>
+                    <h3 style="text-align: center;">Fast Delivery</h3>
+                    <p style="text-align: center; color: var(--gray-medium);">Same-day delivery in major metros. Keep your business running without interruption.</p>
+                </div>
+
+                <div class="card">
+                    <div style="font-size: 3rem; text-align: center; margin-bottom: 1rem;">🏆</div>
+                    <h3 style="text-align: center;">Award-Winning Quality</h3>
+                    <p style="text-align: center; color: var(--gray-medium);">Recognized by industry experts for our commitment to quality and consistency.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background: linear-gradient(135deg, var(--coffee-cream) 0%, var(--gray-light) 100%);">
+        <div class="container">
+            <div class="section-title">
+                <h2>Our Product Categories</h2>
+                <p>Complete solutions for every coffee need</p>
+            </div>
+
+            <div class="grid grid-4">
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">☕</div>
+                    <h4>Coffee Beans</h4>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Premium roasted beans from around the world</p>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">⚙️</div>
+                    <h4>Equipment</h4>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Professional-grade brewing equipment</p>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">📦</div>
+                    <h4>Supplies</h4>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Everything from cups to filters</p>
+                </div>
+
+                <div class="card" style="text-align: center;">
+                    <div style="font-size: 2.5rem; margin-bottom: 1rem;">🔧</div>
+                    <h4>Services</h4>
+                    <p style="color: var(--gray-medium); font-size: 0.9rem;">Maintenance and training programs</p>
+                </div>
+            </div>
+
+            <div style="text-align: center; margin-top: 2rem;">
+                <a href="products.html" class="btn btn-primary btn-large">View All Products</a>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container">
+            <div class="section-title">
+                <h2>Trusted by Industry Leaders</h2>
+                <p>Join thousands of businesses serving exceptional coffee</p>
+            </div>
+
+            <div class="grid grid-3">
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">🏢 Offices</h3>
+                    </div>
+                    <p>Keep your team energized with premium coffee service. Flexible plans and equipment options for offices of all sizes.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">🍽️ Restaurants</h3>
+                    </div>
+                    <p>Elevate your dining experience with our restaurant-grade coffee solutions. Custom blends available.</p>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <h3 class="card-title">🛍️ Retail</h3>
+                    </div>
+                    <p>Launch or expand your coffee retail business with our comprehensive wholesale program.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section style="background-color: var(--coffee-dark); color: var(--white); text-align: center; padding: 4rem 2rem;">
+        <div class="container">
+            <h2 style="color: var(--white); margin-bottom: 1rem;">Ready to Elevate Your Coffee Experience?</h2>
+            <p style="font-size: 1.25rem; margin-bottom: 2rem; opacity: 0.9;">Let's discuss how Contoso Coffee can transform your business</p>
+            <a href="contact.html" class="btn btn-primary btn-large">Contact Our Team</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-section">
+                    <h4>About Contoso Coffee</h4>
+                    <p>Premium coffee solutions for businesses worldwide. From bean to cup, we deliver excellence.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="products.html">Products</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@contosocoffee.com</p>
+                    <p>Phone: 1-800-CONTOSO</p>
+                    <p>Hours: Mon-Fri 8AM-6PM PST</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Contoso Coffee. All rights reserved.</p>
+                <p>Crafted with passion for coffee excellence.</p>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
